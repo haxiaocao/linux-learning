@@ -1,0 +1,4 @@
+10 Wget (Linux File Downloader) Command Examples in Linux
+https://www.tecmint.com/10-wget-command-examples-in-linux/
+
+wget --help | grep pass

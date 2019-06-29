@@ -1,0 +1,30 @@
+Parameter Substitution
+http://www.tldp.org/LDP/abs/html/parameter-substitution.html#PSUB2
+
+Manipulating and/or expanding variables
+${parameter}
+${parameter-default}, ${parameter:-default}
+${parameter=default}, ${parameter:=default}
+${parameter+alt_value}, ${parameter:+alt_value}
+${parameter?err_msg}, ${parameter:?err_msg}
+
+Variable length / Substring removal
+${#var}
+    ${#array} is the length of the first element in the array
+  	${#*} and ${#@} give the number of positional parameters.
+    For an array, ${#array[*]} and ${#array[@]} give the number of elements in the array. 
+${var#Pattern}, ${var##Pattern}
+    ${var#Pattern} Remove from $var the shortest part of $Pattern that matches the front end of $var.
+    ${var##Pattern} Remove from $var the longest part of $Pattern that matches the front end of $var. 
+${var%Pattern}, ${var%%Pattern}
+    ${var%Pattern} Remove from $var the shortest part of $Pattern that matches the back end of $var.
+    ${var%%Pattern} Remove from $var the longest part of $Pattern that matches the back end of $var. 
+
+Variable expansion / Substring replacement
+${var:pos}
+${var:pos:len}
+${var/Pattern/Replacement}
+${var//Pattern/Replacement}
+${var/#Pattern/Replacement}
+${var/%Pattern/Replacement}
+${!varprefix*}, ${!varprefix@}

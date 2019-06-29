@@ -1,5 +1,7 @@
 Parameter Substitution
 http://www.tldp.org/LDP/abs/html/parameter-substitution.html#PSUB2
+Assorted Tips
+http://www.tldp.org/LDP/abs/html/assortedtips.html#PREPENDREF
 
 Manipulating and/or expanding variables
 ${parameter}

@@ -1,3 +1,5 @@
+KEY WORD:  Special Characters, Special Variables, Braces, Variables
+
 linux中shell变量$#,$@,$0,$1,$2的含义解释: 
 变量说明: 
 $$ 

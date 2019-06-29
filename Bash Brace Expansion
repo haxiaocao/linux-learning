@@ -1,4 +1,14 @@
- Bash brace expansion is used to generate stings at the command line or in a shell script. The syntax for brace expansion consists of either a sequence specification or a comma separated list of items inside curly braces "{}". A sequence consists of a starting and ending item separated by two periods "..".
+1. curly braces {}, ${}
+"${foo}bar"
+ expanding array elements, as in ${array[42]}
+ using parameter expansion operations, as in ${filename%.*} (remove extension)
+ expanding positional parameters beyond 9: "$8 $9 ${10} ${11}"
+Doing this everywhere, instead of just in potentially ambiguous cases, can be considered good programming practice. This is both for consistency and to avoid surprises like $foo_$bar.jpg, where it's not visually obvious that the underscore becomes part of the variable name.
+ 
+2.${command}
+   ${command} is equalant to `command`(backstick) character.
+ 
+3. Bash brace expansion is used to generate stings at the command line or in a shell script. The syntax for brace expansion consists of either a sequence specification or a comma separated list of items inside curly braces "{}". A sequence consists of a starting and ending item separated by two periods "..".
 
 Some examples and what they expand to:
 

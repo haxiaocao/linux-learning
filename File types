@@ -1,0 +1,44 @@
+File types In Linux/Unix explained in detail.
+https://www.linuxnix.com/file-types-in-linux/
+
+By default Unix have only 3 types of files. They are..
+1.Regular files      [- Regular file]
+2.Directory files    [d Directory files]
+3.Special files(This category is having 5 sub types in it.) 
+   b Block file 
+   c Character device file
+   p Named pipe file or just a pipe file
+   l Symbolic link file
+   s Socket file
+    
+    
+Definition and information of the file type
+How to create particular file type
+How to list/see particular file type
+
+Find the desired file types:1) ls -l {path}| grep ^{type}  OR 2) find {path} -type {type}
+ls -l {path}| grep ^- 
+ls -l {path}| grep ^d
+ls -l {path}| grep ^{b,c,p,l,s}
+find {path} -type {type}
+
+REGULAR FILES:
+1. Readable file or
+2. A binary file or
+3. Image files or
+4. Compressed files etc.
+
+Block file type:
+These files are hardware files most of them are present in /dev. 
+
+Character device files:
+Provides a serial stream of input or output.Your terminals are classic example for this type of files. 
+
+Pipe files:
+The other name of pipe is a “named” pipe, which is sometimes called a FIFO. FIFO stands for “First In, First Out” and refers to the property that the order of bytes going in is the same coming out. The “name” of a named pipe is actually a file name within the file system. 
+
+Symbolic link files:
+These are linked files to other files. They are either Directory/Regular File. The inode number for this file and it’s parent files are same. There are two types of link files available in Linux/Unix ie soft and hard link. 
+
+Socket files :
+A socket file is used to pass information between applications for communication purpose 

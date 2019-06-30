@@ -2,7 +2,7 @@ File types In Linux/Unix explained in detail.
 https://www.linuxnix.com/file-types-in-linux/
 
 By default Unix have only 3 types of files. They are..
-1.Regular files      [- Regular file]
+1.Regular files      [- Regular file,in command find - is replaced by f(file)]
 2.Directory files    [d Directory files]
 3.Special files(This category is having 5 sub types in it.) 
    b Block file 

@@ -1,4 +1,9 @@
-[fileType]{user:rwx}{group:rwx}{others:rwx}
+
+1. ls command execution:
+drwxrwxr-x  2 amrood amrood      4096 Dec 25 09:59 uml
+{file type and the permission}{the number of memory blocks}{owner}{group}{file size}{create/modify time}{name}
+
+2. [fileType]{user:rwx}{group:rwx}{others:rwx}
 每个文件的属性由左边第一部分的10个字符（如上的“dr-xr-xr-x”）来确定。我们把十个字符拆开看：
 
     10位字符表示：

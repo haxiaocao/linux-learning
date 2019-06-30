@@ -54,3 +54,7 @@ drwxrwxr-x  2 amrood amrood      4096 Dec 25 09:59 uml
     for example: chem/notes,personal/res
    6. chmod form: '[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+'
    
+   7.SUID(Set User ID) && SGID(Set Group ID)
+   To set the SUID and SGID bits for any directory try the following command：
+   chmod ug+s dirname
+   

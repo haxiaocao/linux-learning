@@ -1,3 +1,4 @@
+reference : https://www.tutorialspoint.com/unix/unix-file-permission.htm
 
 1. ls command execution:
 drwxrwxr-x  2 amrood amrood      4096 Dec 25 09:59 uml

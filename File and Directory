@@ -42,7 +42,13 @@ drwxrwxr-x  2 amrood amrood      4096 Dec 25 09:59 uml
     An invisible file is one, the first character of which is the dot or the period character (.). Unix programs (including the shell) use most of these files to store configuration information.
     Such as .profile,.bashrc,.bashrc.swp
     
-    4.
+    4. wc command
     wc filename
     2  19 103 filename
     {line number}{word total number}{total number of bytes}{file name}
+    
+    5. Absolute path VS relative path
+    Absolute path:A pathname is absolute, if it is described in relation to root, thus absolute pathnames always begin with a /.
+    for example: /users/sjones/chem/notes, /etc/passwd
+    Relative path:Relative pathnames never begin with /.
+    for example: chem/notes,personal/res

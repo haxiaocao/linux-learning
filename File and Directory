@@ -41,3 +41,8 @@ drwxrwxr-x  2 amrood amrood      4096 Dec 25 09:59 uml
     3. hiden files/directories
     An invisible file is one, the first character of which is the dot or the period character (.). Unix programs (including the shell) use most of these files to store configuration information.
     Such as .profile,.bashrc,.bashrc.swp
+    
+    4.
+    wc filename
+    2  19 103 filename
+    {line number}{word total number}{total number of bytes}{file name}

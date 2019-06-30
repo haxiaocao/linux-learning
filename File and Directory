@@ -52,3 +52,5 @@ drwxrwxr-x  2 amrood amrood      4096 Dec 25 09:59 uml
     for example: /users/sjones/chem/notes, /etc/passwd
     Relative path:Relative pathnames never begin with /.
     for example: chem/notes,personal/res
+   6. chmod form: '[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+'
+   

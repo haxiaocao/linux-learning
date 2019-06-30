@@ -2,6 +2,7 @@ I use the hard way to get the find command's Examples section,here are my steps 
 1.Use command : man find >> find.txt
 2.Open the find.txt by VS Code, then copy search "EXAMPLES" by exactly mode, then copy this EXAMPLE section.
 
+Note: -type f means file, while -type d means directory.
 EXAMPLES
        find /tmp -name core -type f -print | xargs /bin/rm -f
 

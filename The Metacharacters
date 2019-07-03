@@ -1,0 +1,23 @@
+https://www.tutorialspoint.com/unix/unix-quoting-mechanisms.htm
+
+Here is a list of most of the shell special characters (also called metacharacters) −
+* ? [ ] ' " \ $ ; & ( ) | ^ < > new-line space tab
+
+Single quote
+All special characters between these quotes lose their special meaning.
+
+Double quote
+Most special characters between these quotes lose their special meaning with these exceptions −
+
+    $
+    `
+    \$
+    \'
+    \"
+    \\
+
+Backslash
+Any character immediately following the backslash loses its special meaning.
+
+Back quote
+Anything in between back quotes would be treated as a command and would be executed.

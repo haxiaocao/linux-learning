@@ -1,0 +1,25 @@
+The sed General Syntax: /pattern/action
+The slash character (/) that surrounds the pattern are required because they are used as delimiters.
+p:print the line, d:delete the line, 
+s/pattern1/pattern2/ : Substitutes the first occurrence of pattern1 with pattern2
+
+Deleting All Lines with sed : 'd'
+The sed Addresses :  '1d' number stands for "the Nth line"
+The sed Address Ranges : '1,5d', '1,+5d',... 
+The Substitution Command : 's/root/amrood/','s/root/amrood/g'
+                         For the sed to perform a global substitution, add the letter g to the end 
+
+Using an Alternative String Separator: e.g,'s:/root:/amrood:g'  [used : as the delimiter instead of slash /]
+Replacing with Empty Space:  's/root/','s/root//g'
+Address Substitution: e.g, '10s/sh/quiet/g', '1,5s/sh/quiet/g'
+The Matching Command : sed -n '/root/p'
+Using Regular Expression : '/^daemon/d', '/sh$/d'
+Matching Characters : metacharacters => /[tT]he/,/^.*$/
+Character Class Keywords ：sed -n '/^[[:alpha:]]/p'
+Aampersand Referencing: The sed metacharacter & represents the contents of the pattern that was matched.
+  e.g,sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g' phone.txt
+Using Multiple sed Commands: 
+    sed -e 'command1' -e 'command2' ... -e 'commandN' files
+    sed -e 's/^[[:digit:]]\{3\}/(&)/g'  -e 's/)[[:digit:]]\{3\}/&-/g' phone.txt 
+Back References: ampersand metacharacter
+   e.g, cat phone.txt | sed 's/\(.*)\)\(.*-\)\(.*$\)/Area code: 1 Second: 2 Third: 3/' 
